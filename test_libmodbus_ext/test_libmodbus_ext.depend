@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1566354400 source:/media/iuri/OneDrive/Documentos/libmodbus_ext/test_libmodbus_ext/master.c
+	<stdio.h>
+	<memory.h>
+	<assert.h>
+	<ncurses.h>
+	<modbus/modbus.h>
+	<modbus/modbus-tcp.h>
+	"common.h"
+
+1566353601 source:/media/iuri/OneDrive/Documentos/libmodbus_ext/test_libmodbus_ext/common.c
+	<stdio.h>
+	<stdlib.h>
+	<modbus/modbus.h>
+	<termios.h>
+	<unistd.h>
+	<fcntl.h>
+	"common.h"
+
+1566353592 /media/iuri/OneDrive/Documentos/libmodbus_ext/test_libmodbus_ext/common.h
+	<modbus/modbus.h>
+	<stdbool.h>
+
+1566353486 source:/media/iuri/OneDrive/Documentos/libmodbus_ext/test_libmodbus_ext/slave.c
+	<stdio.h>
+	<memory.h>
+	<ncurses.h>
+	<modbus/modbus.h>
+	<modbus/modbus-tcp.h>
+	"common.h"
+

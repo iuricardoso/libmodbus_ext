@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libmodbus_ext" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<MakeCommands>
+			<Build command="$make -f $makefile" />
+			<CompileFile command="$make -f $makefile $file" />
+			<Clean command="$make -f $makefile clean" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="$make -q -f $makefile" />
+			<SilentBuild command="$make -f $makefile &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="install">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Makefile.am" />
+		<Unit filename="bandwidth-client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bandwidth-server-many-up.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bandwidth-server-one.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="random-test-client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="random-test-server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="unit-test-client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="unit-test-server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="unit-test.h" />
+		<Unit filename="unit-test.h.in" />
+		<Unit filename="version.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
